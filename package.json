@@ -2,12 +2,12 @@
   "name": "a-a-battery-route-problem",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lumexio.github.io/a-a-battery-route-problem",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "homepage": "https://lumexio.github.io/a-a-battery-route-problem",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d .next/build"
   },
