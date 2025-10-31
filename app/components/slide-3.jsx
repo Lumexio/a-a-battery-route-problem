@@ -6,8 +6,9 @@ export default function Slide3() {
       "title": "Why is this challenging?",
       "style": { "textAlign": "left" },
       "content": [
-        "Nodes: customers, depots, charging stations.",
-        "Edges: travel distances and energy costs."
+        "EV’s have limited battery capacity",
+        "Charging takes time and not all stations are available as well as having less stations than vans.",
+        "More customers is the same as more complex routing decisions."
       ]
     }
   ];
@@ -23,7 +24,7 @@ export default function Slide3() {
             ))}
           </ul>
 
-           <img data-preview-image src="/graphmap.png" alt="Graph Representation" style={{ maxWidth: '600px', marginTop: '2rem' }} />
+           <img data-preview-image src="/graphmap.png" alt="Graph Representation" style={{ maxWidth: '400px', marginTop: '2rem' }} />
         </section>
         
       ))}
