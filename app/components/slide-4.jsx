@@ -13,6 +13,7 @@ export default function Slide4() {
   ];
   return (
     <section  data-auto-animate>
+      <h1 className="r-fit-text">Instance Variables</h1>
       <table>
         <thead>
           <tr>
