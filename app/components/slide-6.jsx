@@ -12,9 +12,15 @@ export default function Slide6() {
     <section>
       {textContent.map((item, index) => (
         <div key={index}>
-          <h3 className="r-fit-text">{item.title}</h3>
-          <h4 className="r-fit-text">{item.subtitle}</h4>
-          <p className="r-fit-text">{item.text}</p>
+          <h3 style={{
+            fontSize:"1.6rem"
+          }}>{item.title}</h3>
+          <h4 style={{
+            fontSize:"1.6rem"
+          }}>{item.subtitle}</h4>
+          <p style={{
+            fontSize:"1.6rem"
+          }}>{item.text}</p>
         </div>
       ))}
     </section>

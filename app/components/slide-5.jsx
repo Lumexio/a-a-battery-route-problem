@@ -8,23 +8,35 @@ export default function Slide5() {
     { "header": "time[v]", "description": "Total time taken(including route,charging, and delivery.)", "type": "Float/int" },
   ]
   return (
-    <section>
+    <section data-auto-animate >
       <h1 className="r-fit-text">Decision Variables</h1>
-      <p>These variables are determined by the algorithm to minimize the total cost. Here i and j represent the location indices from 0 to N and v represents each vehicle in the fleet.</p>
+      <p className="r-fit-text">These variables are determined by the algorithm to minimize the total cost. Here i and j represent the location indices from 0 to N and v represents each vehicle in the fleet.</p>
     <table>
       <thead>
         <tr>
-          <th>Variable</th>
-          <th>Meaning</th>
-          <th>Type</th>
+          <th style={{
+            fontSize:"1.6rem"
+          }}>Variable</th>
+          <th style={{
+            fontSize:"1.6rem"
+          }}>Meaning</th>
+          <th style={{
+            fontSize:"1.6rem"
+          }}>Type</th>
         </tr>
       </thead>
       <tbody>
         {tableContent.map((row, index) => (
           <tr key={index}>
-            <td>{row.header}</td>
-            <td>{row.description}</td>
-            <td>{row.type}</td>
+            <td style={{
+              fontSize:"1.6rem"
+            }}>{row.header}</td>
+            <td style={{
+              fontSize:"1.6rem"
+            }}>{row.description}</td>
+            <td style={{
+              fontSize:"1.6rem"
+            }}>{row.type}</td>
           </tr>
         ))}
       </tbody>
