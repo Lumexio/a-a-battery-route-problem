@@ -10,10 +10,9 @@ import Slide3 from './components/slide-3';
 import Slide4 from './components/slide-4';
 import Slide5 from './components/slide-5';
 import Slide6 from './components/slide-6';
+import Slide7_3 from './components/slide-7-3';
 import Slide7 from './components/slide-7';
 import Slide8 from './components/slide-8';
-import Slide9 from './components/slide-9';
-import Slide10 from './components/slide-10';
 
 const slides = [
   Slide1,
@@ -22,10 +21,10 @@ const slides = [
   Slide4,
   Slide5,
   Slide6,
+  Slide7_3,
   Slide7,
   Slide8,
-  Slide9,
-  Slide10,
+
 ];
 
 export { slides };
