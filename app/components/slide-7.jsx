@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function Slide7() {
     let tableContent = [
-    { "header": "Routing behavior", "Approach X": "Chooses the next step based only on current location and battery.", "Approach Y": "This prioritizes groups that are close together to minimize travel between deliveries." },
-    { "header": "Battery usage", "Approach X": "This is efficient per customer but this might involve more returns to the charging station", "Approach Y": "This is more efficient overall because it creates routes that use less battery because it reduces unnecessary travel between distant customers." },
-    { "header": "Distance traveled", "Approach X": "This can result in a zig-zag pattern if customers are unevenly spaced and also might visit similar areas multiple times.", "Approach Y": "Since this compacts customers into delivery routes this leads to shorter total distance." },
-    { "header": "Charging ", "Approach X": "More frequent stops", "Approach Y": "Less charging trips if the grouping is made correctly." },
-    { "header": "Implementation", "Approach X": "Should be manageable.", "Approach Y": "This requires a grouping step before routing but still should be manageable." },
+    { "header": "Routing behavior", "approach_x": "Chooses the next step based only on current location and battery.", "approach_y": "This prioritizes groups that are close together to minimize travel between deliveries." },
+    { "header": "Battery usage", "approach_x": "This is efficient per customer but this might involve more returns to the charging station", "approach_y": "This is more efficient overall because it creates routes that use less battery because it reduces unnecessary travel between distant customers." },
+    { "header": "Distance traveled", "approach_x": "This can result in a zig-zag pattern if customers are unevenly spaced and also might visit similar areas multiple times.", "approach_y": "Since this compacts customers into delivery routes this leads to shorter total distance." },
+    { "header": "Charging ", "approach_x": "More frequent stops", "approach_y": "Less charging trips if the grouping is made correctly." },
+    { "header": "Implementation", "approach_x": "Should be manageable.", "approach_y": "This requires a grouping step before routing but still should be manageable." },
   ]
   return (
     <section>
@@ -28,14 +28,14 @@ export default function Slide7() {
         {tableContent.map((row, index) => (
           <tr key={index}>
             <td style={{
-              fontSize:"1.6rem"
+              fontSize:"1.2rem"
             }}>{row.header}</td>
             <td style={{
-              fontSize:"1.6rem"
-            }}>{row.description}</td>
+              fontSize:"1.2rem"
+            }}>{row.approach_x}</td>
             <td style={{
-              fontSize:"1.6rem"
-            }}>{row.type}</td>
+              fontSize:"1.2rem"
+            }}>{row.approach_y}</td>
           </tr>
         ))}
       </tbody>
@@ -43,3 +43,5 @@ export default function Slide7() {
   </section>
   );
 }
+
+     
