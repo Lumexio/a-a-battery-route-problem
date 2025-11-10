@@ -7,9 +7,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "lint": "eslint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d .next/build"
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "next": "16.0.1",
