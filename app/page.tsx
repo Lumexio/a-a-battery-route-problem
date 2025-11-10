@@ -24,7 +24,6 @@ const slides = [
   Slide7_3,
   Slide7,
   Slide8,
-
 ];
 
 export { slides };

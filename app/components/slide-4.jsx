@@ -16,19 +16,43 @@ export default function Slide4() {
   ];
   return (
     <section data-auto-animate>
-      <h1 className="r-fit-text">Instance Variables</h1>
-      <table>
+      <h2 className="r-fit-text">Instance Variables</h2>
+      <table className="r-frame r-fit-text">
         <thead>
           <tr>
-            <th>Variable</th>
-            <th>Meaning</th>
+            <th
+              style={{
+                fontSize: '2rem',
+              }}
+            >
+              Variable
+            </th>
+            <th
+              style={{
+                fontSize: '2rem',
+              }}
+            >
+              Meaning
+            </th>
           </tr>
         </thead>
         <tbody>
           {tableContent.map((row, index) => (
             <tr key={index}>
-              <td>{row.header}</td>
-              <td>{row.description}</td>
+              <td
+                style={{
+                  fontSize: '2rem',
+                }}
+              >
+                {row.header}
+              </td>
+              <td
+                style={{
+                  fontSize: '2rem',
+                }}
+              >
+                {row.description}
+              </td>
             </tr>
           ))}
         </tbody>

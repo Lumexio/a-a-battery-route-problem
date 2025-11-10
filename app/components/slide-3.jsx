@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 export default function Slide3() {
   let contentsText = [
     {
@@ -12,6 +12,11 @@ export default function Slide3() {
       ],
     },
   ];
+  let imgSrc = [
+    { alt: 'Battery Capacity', src: '/battery-capacity.png' },
+    { alt: 'Battery Consumption', src: '/battery-consumption.png' },
+    { alt: 'Battery Range', src: '/battery-range.png' },
+  ];
   return (
     <>
       {contentsText.map((item, index) => (
@@ -22,13 +27,25 @@ export default function Slide3() {
               <li key={i}>{text}</li>
             ))}
           </ul>
-
-          <img
-            data-preview-image
-            src="/graphmap.png"
-            alt="Graph Representation"
-            style={{ maxWidth: '400px', marginTop: '2rem' }}
-          />
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'center',
+              gap: '4rem',
+            }}
+          >
+            {imgSrc.map((src, i) => (
+              <Image
+                key={i}
+                data-preview-image
+                src={src.src}
+                alt={src.alt}
+                width={200}
+                height={200}
+              />
+            ))}
+          </div>
         </section>
       ))}
     </>
